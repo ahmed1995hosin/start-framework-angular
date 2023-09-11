@@ -1,0 +1,16 @@
+<div class="text-center" [ngStyle]="{ color: headingColor }">
+  <h2 class="fw-bolder text-uppercase pt-5 mb-4 heading-2">
+    {{ headingTitle }}
+  </h2>
+  <div class="d-flex justify-content-center align-items-center mb-5">
+    <div
+      class="line me-4"
+      [ngStyle]="{ 'background-color': headingColor }"
+    ></div>
+    <i class="fa-solid fa-star"></i>
+    <div
+      class="line ms-4"
+      [ngStyle]="{ 'background-color': headingColor }"
+    ></div>
+  </div>
+</div>

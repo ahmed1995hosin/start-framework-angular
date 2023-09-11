@@ -1,0 +1,24 @@
+.contact {
+  margin-top: 9rem;
+  color: black;
+}
+
+.contact form {
+  margin-top: 2rem;
+  padding: 1.6rem;
+}
+.text-color {
+  color: #1abc9c;
+}
+
+.contact input {
+  font-size: 1.7rem;
+}
+.form-control:focus {
+  box-shadow: unset;
+}
+
+/* _top */
+._top {
+  top: 4rem !important;
+}

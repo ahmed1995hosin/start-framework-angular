@@ -1,0 +1,16 @@
+.nav-link:hover {
+  background-color: var(--main-color);
+}
+.logo {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+.active {
+  background-color: var(--main-color);
+}
+
+.p-4 {
+  padding: 2.4rem 0 !important;
+}

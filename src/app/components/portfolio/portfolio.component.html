@@ -1,0 +1,99 @@
+<section class="portfolio mb-5">
+  <div class="text-center">
+    <h3 class="fw-bolder">404</h3>
+    <app-headingtitle
+      [headingTitle]="headingTitle"
+      [headingColor]="headingColor"
+    ></app-headingtitle>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <picture
+            class="portfolio-image position-relative rounded-3 overflow-hidden"
+          >
+            <img #img1 src="./assets/images/poert1.png" alt="" class="w-100" />
+            <div
+              (click)="popUp(img1)"
+              class="position-absolute image-layout d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </picture>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <picture
+            class="portfolio-image position-relative rounded-3 overflow-hidden"
+          >
+            <img #img2 src="./assets/images/port2.png" alt="" class="w-100" />
+            <div
+              (click)="popUp(img2)"
+              class="position-absolute image-layout d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </picture>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <picture
+            class="portfolio-image position-relative rounded-3 overflow-hidden"
+          >
+            <img #img3 src="./assets/images/port3.png" alt="" class="w-100" />
+            <div
+              (click)="popUp(img3)"
+              class="position-absolute image-layout d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </picture>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <picture
+            class="portfolio-image position-relative rounded-3 overflow-hidden"
+          >
+            <img #img4 src="./assets/images/poert1.png" alt="" class="w-100" />
+            <div
+              (click)="popUp(img4)"
+              class="position-absolute image-layout d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </picture>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <picture
+            class="portfolio-image position-relative rounded-3 overflow-hidden"
+          >
+            <img #img5 src="./assets/images/port2.png" alt="" class="w-100" />
+            <div
+              (click)="popUp(img5)"
+              class="position-absolute image-layout d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </picture>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <picture
+            class="portfolio-image position-relative rounded-3 overflow-hidden"
+          >
+            <img #img6 src="./assets/images/port3.png" alt="" class="w-100" />
+            <div
+              (click)="popUp(img6)"
+              class="position-absolute image-layout d-flex justify-content-center align-items-center"
+            >
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  (click)="close($event)"
+  class="pop-up d-flex justify-content-center align-content-center vh-100 bg-opacity-25 fixed-top w-100 transition"
+  [ngClass]="{ 'd-none': popUpSwitche }"
+>
+  <img (click)="imageStop($event)" [src]="popUpSrc" alt="" />
+</section>
